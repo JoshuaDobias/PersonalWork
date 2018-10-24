@@ -14,9 +14,10 @@ public class HowMuchDoYouWeight {
 		System.out.println("5 = Saturn");
 		Planet choice = new Planet();
 		System.out.print("Planet");choice.setPlanet(input.nextInt());
+		System.out.println("Your choice "+choice.getPlanet());
 		System.out.println("How much do you weigh");
 		choice.setWeight(input.nextInt());
-		choice.getPlanet();
+		choice.showPlanet();
 
 	}
 

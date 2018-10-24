@@ -11,7 +11,10 @@ public class Planet {
 	public void setWeight(int setWeight) {
 		weight=setWeight;
 	}
-	public void getPlanet() {
+	public int getPlanet() {
+		return planet;
+	}
+	public void showPlanet() {
 		switch(planet) {
 		case 1:
 			System.out.println("You will be on Mercury");
