@@ -28,8 +28,27 @@ public class ToBeDetermined {
 			}while(num3!=9999);
 			int range=largeNum3-smallNum3;
 			System.out.println("This is your range "+range);
-		
-		
+			break;
+		case 5:
+			for (int i=0; i<20; i++) {
+				System.out.println(i+ "hello world");
+				break;
+			}
+		case 6:
+			int total=0;
+			for (int counter=1; counter <=10; counter++) {
+				total+=counter;
+			}
+		System.out.println(total);
+		case 9:
+			int give=0;
+			int total9=0;
+			for (int count=0; count<5; count++ ) {
+				System.out.println("Enter a number");
+				give=input.nextInt();
+				total9=total9+give;
+			}
+			System.out.println("Your total is "+total9);
 		}
 	}
 
