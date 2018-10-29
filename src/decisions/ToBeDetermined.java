@@ -38,6 +38,7 @@ public class ToBeDetermined {
 			int total=0;
 			for (int counter=1; counter <=10; counter++) {
 				total+=counter;
+				break;
 			}
 		System.out.println(total);
 		case 9:
@@ -49,7 +50,22 @@ public class ToBeDetermined {
 				total9=total9+give;
 			}
 			System.out.println("Your total is "+total9);
+			break;
+		case 10:
+			//this is the Prime Numbers activities  
+			System.out.println("Enter a number: ");
+			int checkNum=input.nextInt();
+			int remainder=1;
+			for (int i=2;i!=checkNum&&remainder!=0; i++) {
+				remainder=checkNum%i;
+				System.out.println(checkNum+" Divided by "+ i + " gives a remainder "+remainder);
+				}if (remainder == 0) {
+					System.out.println("The number you entered is not prime");}
+					else {
+						System.out.println("The number you entered is Prime");
+					}
+			}
 		}
 	}
 
-}
+
