@@ -33,10 +33,7 @@ public class NestedLoops {
 				}System.out.println("The number with the most devisors " + biggestNum);
 				break;
 		case 4:
-			
 			for (int column = 1; column <= 5; column++) {
-				
-				
 				for (int row = column; row <= 6; row++) {
 					if (row==6) {
 						System.out.print(" "+column+" ");}
@@ -47,10 +44,25 @@ public class NestedLoops {
 				}System.out.println();
 				
 				
+			}break;
+		case 5:
+			//prime factorization
+			System.out.println("Enter a number to go through prime factorization");
+			int num=input.nextInt();
+			int remainder=0;
+			for (int factor=2; factor<=num; factor++) {
+				while (remainder==0) {
+				remainder=num%factor;
+				if (remainder==0) {
+					num=num/factor;
+					System.out.println(factor);}
+				}remainder=0;
 			}
 			
-			
-			
+		
+		
+		
+		
 		}
 	}
 
