@@ -86,7 +86,37 @@ public class ProgammingOp {
 			}
 			System.out.println("Min: "+min1+ " Max: "+ max);
 			break;
+		case 4://Yahtzee
+		       int min4 = 1;
+		       int max4 = 6;
+		       int roll = 0;
+		       int count = 0;
+		       int tries = 0;
+		       boolean yahtzee = false;
+		       while (yahtzee == false) {
+		           for (int h = 1; h < 5; h++) {
+		        	   System.out.println(h);
+		               int outcome = min4 + generater.nextInt(max4 - min4 + 1);
+		               System.out.println(outcome);
+		               if (roll == 0) {
+		                   roll = outcome;
+		                   count++;
+		               } else if (outcome == roll) {
+		                   count++;
+		               }
+		           }
+		           if (count == 5) {
+		               System.out.println("You got Yahtzee! It took you " + tries + " tries!");
+		               yahtzee = true;
+		           } else {
+		               yahtzee = false;
+		               tries++;                
+		           }
+		           count = 0;
+		       }
+		   }
 		}
+		
 
 	}
-}
+
