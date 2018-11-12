@@ -38,9 +38,10 @@ public class Practice {
 			String name1=input.next();
 			System.out.println("Enter another name with proper english");
 			String name2=input.next();
-			if(name1.compareTo(name2)<0);{
+			if(name1.compareTo(name2)<0){
 			System.out.println("The first name comes first");}
-			if(name2.compareTo(name1)<0) {
+			
+			else if(name2.compareTo(name1)<0) {
 				System.out.println("The second name comes first");
 			}
 			
