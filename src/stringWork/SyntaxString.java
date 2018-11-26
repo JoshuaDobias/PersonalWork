@@ -54,7 +54,6 @@ public class SyntaxString {
 			System.out.println("Write a sentance");
 			String sentence5 = input.nextLine();
 			System.out.println(sentence5.indexOf('x'));
-			;
 			break;
 		case 6:
 			// length
@@ -94,8 +93,59 @@ public class SyntaxString {
 			System.out.println("Regular:" + text0);
 			break;
 		case 11:
+			// toUpperCase
 			input.nextLine();
-
+			System.out.println("Type a Name");
+			String name3 = input.nextLine();
+			name3.toUpperCase();
+			System.out.println("Enter another Name");
+			String name4 = input.nextLine();
+			name4.toUpperCase();
+			if (name3.compareTo(name4) < 0) {
+				System.out.println("First " + name3.toUpperCase());
+			} else if (name4.compareTo(name3) < 0) {
+				System.out.println("First " + name4.toUpperCase());
+			}
+			break;
+		case 12:
+			input.nextLine();
+			System.out.println("Set Password:");
+			String password = input.nextLine();
+			while (1 == 1) {
+				System.out.println("Enter Password");
+				String checkPassword = input.nextLine();
+				if (checkPassword.equals(password)) {
+					System.out.println("logging in");
+					break;
+				} else {
+					System.out.println("Incorrect Password");
+					System.out.println();
+				}
+			}
+			break;
+		case 13:
+			input.nextLine();
+			int x = 0;
+			System.out.println("write a sentence");
+			String sentence13 = input.nextLine();
+			for (int i = 1; i < sentence13.length()+1; i++) {
+				x = i % 4;
+				if (x == 0) {
+					System.out.println(sentence13.charAt(i - 1));
+				}
+			}
+			break;
+		case 14:
+			input.nextLine();
+			System.out.println("Write a sentence");
+			String sentence14=input.nextLine();
+			for (int i=0; i<sentence14.length(); i++) {
+				if(sentence14.charAt(i)!='a' && sentence14.charAt(i)!=' ') {
+				System.out.print(sentence14.charAt(i));}
+				else {System.out.print("");}
+			}
+			System.out.println();
+			System.out.println("What you wrote: "+sentence14);
 		}
 
 	}
