@@ -78,7 +78,7 @@ public class SyntaxString {
 			}
 			break;
 		case 9:
-			// substring example ( end is non-inclusive
+			// substring example (end is non-inclusive)
 			String text1 = "My name is Buzz Lightyear!";
 			for (int i = 0; i < text1.length(); i++) {
 				System.out.println(text1.substring(0, i + 1));

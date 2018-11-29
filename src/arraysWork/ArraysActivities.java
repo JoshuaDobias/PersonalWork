@@ -112,48 +112,84 @@ public class ArraysActivities {
 			break;
 		case 8:
 			input.nextLine();
-			String [] names=new String[20];
+			String[] names = new String[20];
 			System.out.println("Enter your friends names:");
-			for (int i=0; i<names.length;i++) {
-				names [i]=input.nextLine();
+			for (int i = 0; i < names.length; i++) {
+				names[i] = input.nextLine();
 			}
 			System.out.println("length of the first names wanted?");
-			int firstlength=input.nextInt();
-			for (int i=0;i<names.length;i++) {
-				int m=names[i].indexOf(' ');
-				if(firstlength==m) {
+			int firstlength = input.nextInt();
+			for (int i = 0; i < names.length; i++) {
+				int m = names[i].indexOf(' ');
+				if (firstlength == m) {
 					System.out.println(names[i]);
 				}
 			}
 			break;
 		case 9:
-			//Array of objects
+			// Array of objects
 			Random generater1 = new Random();
-			Rectangle [] lot=new Rectangle[100];
-			for (int i=0; i<lot.length;i++) {
+			Rectangle[] lot = new Rectangle[100];
+			for (int i = 0; i < lot.length; i++) {
 				int randomNum1 = 10 + generater1.nextInt(56 - 10 + 1);
-				int randomNum2= 10 + generater1.nextInt(56 - 10 +1);
-				lot[i]=new Rectangle(randomNum1,randomNum2);
+				int randomNum2 = 10 + generater1.nextInt(56 - 10 + 1);
+				lot[i] = new Rectangle(randomNum1, randomNum2);
 			}
-			int smallest=lot[0].area();
-			int smallestRec=0;
-			for(int i=0; i<lot.length;i++) {
-				int small=lot[i].area();
-				if (small<smallest){
-					smallest=lot[i].area();
-					smallestRec=i;
+			int smallest = lot[0].area();
+			int smallestRec = 0;
+			for (int i = 0; i < lot.length; i++) {
+				int small = lot[i].area();
+				if (small < smallest) {
+					smallest = lot[i].area();
+					smallestRec = i;
 				}
 			}
-			System.out.println("Smallest area is Rectangle: " + (smallestRec+1));
-			for (int i=0; i<lot.length; i++) {
-				System.out.println("Rectangle "+(i+1)+ " width: "+ lot[i].getWidth());
-				System.out.println("Rectangle "+(i+1)+ " length: "+ lot[i].getLength());
-				System.out.println("Rectangle "+(i+1)+ " area: "+ lot[i].area());
+			System.out.println("Smallest area is Rectangle: " + (smallestRec + 1) + " At an area of " + smallest);
+			for (int i = 0; i < lot.length; i++) {
+				System.out.println("Rectangle " + (i + 1) + " width: " + lot[i].getWidth());
+				System.out.println("Rectangle " + (i + 1) + " length: " + lot[i].getLength());
+				System.out.println("Rectangle " + (i + 1) + " area: " + lot[i].area());
 				System.out.println();
 			}
-			
+			break;
+		case 10:
+			input.nextLine();
+			System.out.println("Enter a sentence");
+			String sentence = input.nextLine();
+			String[] words = sentence.split(" ");
+
+			System.out.println("first letter of each word");
+			for (int i = 0; i < words.length; i++) {
+				System.out.println(words[i].charAt(0));
+			}
+			break;
+		case 11:
+			int count = 0;
+			input.nextLine();
+			System.out.println("Enter a sentence");
+			String sentence1 = input.nextLine();
+			System.out.println("Keyword");
+			String keyword = input.nextLine();
+			String[] search = sentence1.split(" ");
+			for (int i = 0; i < search.length; i++) {
+				if (search[i].equals(keyword) == true) {
+					count++;
+				}
+			}
+			System.out.println("This word shows " + count + " times");
+			break;
+		case 12:
+			Random generater12 = new Random();
+			input.nextLine();
+			System.out.println("Enter a sentence");
+			String sentence12 = input.nextLine();
+			String[] spil = sentence12.split(" ");
+			int min = 0;
+			int max = spil.length;
+			int randomNum12 = min + generater12.nextInt(max - min);
+			System.out.println(spil[randomNum12]);
 
 		}
-
 	}
+
 }
