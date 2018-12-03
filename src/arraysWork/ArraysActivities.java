@@ -153,6 +153,7 @@ public class ArraysActivities {
 			}
 			break;
 		case 10:
+			//split
 			input.nextLine();
 			System.out.println("Enter a sentence");
 			String sentence = input.nextLine();
@@ -164,6 +165,7 @@ public class ArraysActivities {
 			}
 			break;
 		case 11:
+			//split
 			int count = 0;
 			input.nextLine();
 			System.out.println("Enter a sentence");
@@ -179,14 +181,15 @@ public class ArraysActivities {
 			System.out.println("This word shows " + count + " times");
 			break;
 		case 12:
+			//split
 			Random generater12 = new Random();
 			input.nextLine();
 			System.out.println("Enter a sentence");
 			String sentence12 = input.nextLine();
 			String[] spil = sentence12.split(" ");
 			int min = 0;
-			int max = spil.length;
-			int randomNum12 = min + generater12.nextInt(max - min);
+			int max = spil.length-1;
+			int randomNum12 = min + generater12.nextInt(max - min + 1);
 			System.out.println(spil[randomNum12]);
 
 		}
