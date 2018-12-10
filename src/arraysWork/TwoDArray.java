@@ -69,15 +69,17 @@ public class TwoDArray {
 					System.out.print(names[i][column] + " ");
 				}
 				System.out.println();
-			}break;
+			}
+			break;
 		case 5:
 			Friend[][] friends = new Friend[18][5];
 			for (int row = 0; row < friends.length; row++) {
 				for (int column = 0; column < friends[0].length; column++) {
-					friends[row][column]=new Friend();
+					friends[row][column] = new Friend();
 					int randomNumber = min + generator.nextInt(max - min + 1);
 					friends[row][column].setAge(randomNumber);
-					System.out.print("Friend #: "+(row+column+1+(4*row)) +" Age: "+friends[row][column].getAge()+" ");
+					System.out.print("Friend #: " + (row + column + 1 + (4 * row)) + " Age: "
+							+ friends[row][column].getAge() + " ");
 				}
 				System.out.println();
 			}
