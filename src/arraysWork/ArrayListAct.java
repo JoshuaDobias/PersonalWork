@@ -80,7 +80,7 @@ public class ArrayListAct {
 				System.out.println(area.area());
 			}
 			break;
-		case 8: //Removing elements kicks it down on element
+		case 8: //Removing elements kicks it down an element
 			int choice=0;
 			ArrayList<String> student=new ArrayList();
 			while(choice==0) {
