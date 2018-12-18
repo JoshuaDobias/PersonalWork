@@ -153,7 +153,7 @@ public class ArraysActivities {
 			}
 			break;
 		case 10:
-			//split
+			// split
 			input.nextLine();
 			System.out.println("Enter a sentence");
 			String sentence = input.nextLine();
@@ -165,7 +165,7 @@ public class ArraysActivities {
 			}
 			break;
 		case 11:
-			//split
+			// split
 			int count = 0;
 			input.nextLine();
 			System.out.println("Enter a sentence");
@@ -181,18 +181,37 @@ public class ArraysActivities {
 			System.out.println("This word shows " + count + " times");
 			break;
 		case 12:
-			//split
+			// split
 			Random generater12 = new Random();
 			input.nextLine();
 			System.out.println("Enter a sentence");
 			String sentence12 = input.nextLine();
 			String[] spil = sentence12.split(" ");
 			int min = 0;
-			int max = spil.length-1;
+			int max = spil.length - 1;
 			int randomNum12 = min + generater12.nextInt(max - min + 1);
 			System.out.println(spil[randomNum12]);
-
+			break;
+		case 13: // sequential searching activities
+			int[] a = new int[100];
+			Random gen = new Random();
+			for (int i = 0; i < a.length; i++) {
+				int num = 0 + gen.nextInt(499 - 0 + 1);
+				a[i] = num;
+				System.out.println(a[i]);
+			}
+			System.out.println("integer you are looking for?");
+			int look = input.nextInt();
+			int i = 0;
+			for (int x : a) {
+				if (x == look) {
+					i++;
+				}
+			}
+			System.out.println("There are " + i + " number of those integers");
+			break;
 		}
+		input.close();
 	}
 
 }
