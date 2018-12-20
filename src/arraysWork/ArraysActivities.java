@@ -210,6 +210,9 @@ public class ArraysActivities {
 			}
 			System.out.println("There are " + i + " number of those integers");
 			break;
+		case 14:
+			
+			break;
 		}
 		input.close();
 	}
