@@ -86,7 +86,7 @@ public class ArrayListAct {
 			break;
 		case 8: // Removing elements kicks it down an element
 			int choice = 0;
-			ArrayList<String> student = new ArrayList();
+			ArrayList<String> student = new ArrayList<String>();
 			while (choice == 0) {
 				input.nextLine();
 				System.out.println("enter student name");
@@ -132,6 +132,6 @@ public class ArrayListAct {
 			System.out.println("The number of rectangles with width 10 are " + count);
 
 		}
-
+		input.close();
 	}
 }
