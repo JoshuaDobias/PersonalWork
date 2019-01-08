@@ -5,7 +5,7 @@ public class Teacher implements Person {
 	String name;
 	int teacherAge;
 	boolean gender; // true = male
-	double bankBalance;s
+	double bankBalance;
 	double payCheck;
 
 	public Teacher() {

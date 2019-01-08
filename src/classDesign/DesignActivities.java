@@ -19,6 +19,7 @@ public class DesignActivities {
 			System.out.println("Greeter " + i + " age :");
 			System.out.println(x.getAge());
 		}
+		
 		input.close();
 	}
 
