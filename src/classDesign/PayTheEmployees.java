@@ -7,7 +7,7 @@ public class PayTheEmployees {
 	private double rate;
 	private double hoursWorked;
 	private int employeeID=1;
-	private static int id;
+	private static int id=0;
 	Random gen=new Random();
 	int min=0;
 	int max=40;
@@ -17,5 +17,8 @@ public class PayTheEmployees {
 		hoursWorked=min + gen.nextInt(max - min + 1);
 		employeeID=id;
 		id+=1;
+	}
+	public void modRate() {
+		
 	}
 }
